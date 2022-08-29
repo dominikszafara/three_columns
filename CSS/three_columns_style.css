@@ -5,6 +5,9 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+body{
+    background-color: azure;
+}
 .container{
     width: 375px;
     width: 80vw;
