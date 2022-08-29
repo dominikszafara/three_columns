@@ -1,0 +1,128 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.container{
+    width: 375px;
+    width: 80vw;
+    padding: 0.5em;
+    margin: 2vh auto 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75); 
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Big Shoulders Display', cursive;
+}
+h1{
+    color: hsl(0, 0%, 95%); 
+    font-family: 'Big Shoulders Display', cursive;   
+}
+.button{
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button1:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+}
+.button2:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);  
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+}
+.button3:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);  
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+}
+.button1{
+    color: hsl(31, 77%, 52%);
+}
+.button2{
+    color: hsl(184, 100%, 22%);
+}
+.button3{
+    color: hsl(179, 100%, 13%);
+}
+.box{
+    justify-self: center;
+    padding: 45px;
+    min-height: 350px;
+    min-width: 200px;
+    max-width: 250px;
+    
+    display: flex;
+    flex-direction: column;   
+}
+.imgbox{
+    order: 1;
+}
+.titlebox{
+    order: 2;
+}
+.textbox{
+    order: 3;
+}
+.buttonbox{
+    order: 4;
+    margin-top: auto;
+}
+.box1{
+    order: 1;
+    background-color: hsl(31, 77%, 52%);
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+}
+.box2{
+    order: 2; 
+    background-color: hsl(184, 100%, 22%);
+}
+.box3{
+    order: 3;
+    background-color: hsl(179, 100%, 13%);
+    overflow: hidden;
+    border-radius: 0px 15px 15px 0px;
+}
+/*desktop first - mobile second*/
+@media screen and (max-width: 875px) {
+    .container{
+        max-width: 1440px;
+        width: 80vw;
+        margin: 2vh auto 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1{
+        overflow: hidden;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .box3{
+        overflow: hidden;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .box{
+        min-height: 350px;
+        min-width: 225px;
+    }
+}
